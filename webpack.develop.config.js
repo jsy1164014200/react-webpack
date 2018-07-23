@@ -62,7 +62,8 @@ module.exports = {
         }
     },
     plugins:[
-        new HtmlWebpackPlugin()
+        new webpack.HotModuleReplacementPlugin()  //配置热加载模块 不然webpack-dev-server会报错
+        // new HtmlWebpackPlugin()
     ]
 };
 
